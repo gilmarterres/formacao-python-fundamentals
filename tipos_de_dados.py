@@ -4,9 +4,11 @@ print(True)
 print(False)
 print("Gilmar")
 
-a = "3"
+A = 2
 
-print(int(a)+5)
+A = 7
+
+print(int(A)+5)
 float()
 str()
 bool()
