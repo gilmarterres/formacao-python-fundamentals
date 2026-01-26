@@ -15,7 +15,8 @@ class Bicicleta:
     def correr(self):
         print("Vrunnnnn....")
 
-
+    def get_cor(self):
+        return self.cor
 
 b1 = Bicicleta("vermelha", "caloi", 2022, 640)
 
@@ -24,3 +25,10 @@ b1.correr()
 b1.parar()
 
 print(b1.ano, b1.cor, b1.modelo)
+
+b2 = Bicicleta("verde", "monark", 2000, 189)
+b2.buzinar()
+print(b2.get_cor())
+
+
+# parou em 15mim 
