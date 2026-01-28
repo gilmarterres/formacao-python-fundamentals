@@ -17,18 +17,24 @@ class Bicicleta:
 
     def get_cor(self):
         return self.cor
+    
+    # def __str__(self):
+        # return f"Bicicleta: cor={self.cor}, modelo={self.modelo}, ano={self.ano}, valor={self.valor}"
 
-b1 = Bicicleta("vermelha", "caloi", 2022, 640)
+    def __str__(self):
+        return f"{self.__class__.__name__}: {[f'{chave}={valor}' for chave, valor in self.__dict__.items()]}"
 
-b1.buzinar()
-b1.correr()
-b1.parar()
+# b1 = Bicicleta("vermelha", "caloi", 2022, 640)
 
-print(b1.ano, b1.cor, b1.modelo)
+# b1.buzinar()
+# b1.correr()
+# b1.parar()
+
+# print(b1.ano, b1.cor, b1.modelo)
 
 b2 = Bicicleta("verde", "monark", 2000, 189)
-b2.buzinar()
-print(b2.get_cor())
+# b2.buzinar()
+# print(b2.get_cor())
+print(b2)
 
-
-# parou em 15mim 
+# parou em 22mim 
